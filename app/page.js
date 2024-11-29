@@ -1,5 +1,5 @@
-import FooterMain from "@/Components/FooterMain";
 import Image from "next/image";
+import FooterMain from "./_Components/FooterMain";
 
 export default function Home() {
   return (
