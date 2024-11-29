@@ -1,21 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    font-family: "Jost";
+    overflow: hidden;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .bgHome {
+    background-image: url("/images/home/bg-home-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page1 {
+    background-image: url("/images/Page1/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page3 {
+    background-image: url("/images/Page2/Sun_1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page4 {
+    background-image: url("/images/pages/page3BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page5 {
+    background-image: url("/images/Page5/Page5BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .quizBG {
+    background-image: url("/images/home/bg-home-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
