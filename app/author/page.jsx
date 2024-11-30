@@ -1,8 +1,19 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import FooterPage from "../_Components/FooterPage";
+import { useRouter } from "next/navigation";
 
 function Author() {
+
+  const router = useRouter();
+
+  const NextPageBtnHandler = (e) => {
+    e.preventDefault();
+    router.push("/eng/01")
+  }
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover select-none">
@@ -49,6 +60,7 @@ function Author() {
           </div>
         </div>
       </section>
+      <FooterPage pageNum1={"00"} pageNum2={"00"} onNext={NextPageBtnHandler} />
     </>
   );
 }
