@@ -18,7 +18,7 @@ function Page2() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
+      <section className="w-[100vw] h-[100vh] page2 bg-cover select-none">
         {/* <div className="flex gap-5">
           <div className="w-full h-full relative">
             <Image
@@ -74,6 +74,7 @@ function Page2() {
           </div>
         </div> */}
         <TwoColumnLayout2
+          className="w-full h-full bg-cover my-10"
           imageSrc="/images/Page1/bed.png"
           altText="bed grandfather grandson moon story"
         >

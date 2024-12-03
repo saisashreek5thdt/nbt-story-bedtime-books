@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function TwoColumnLayout2({ imageSrc, altText, children }) {
+function TwoColumnLayout2({ imageSrc, altText, children, className }) {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
@@ -11,7 +11,7 @@ function TwoColumnLayout2({ imageSrc, altText, children }) {
             src={imageSrc}
             alt={altText}
             objectFit="cover"
-            className="w-full h-full bg-cover"
+            className={className}
             unoptimized
             priority={true}
             quality={100}

@@ -22,6 +22,12 @@
     background-size: cover;
   }
 
+  .page2 {
+    background-image: url("/images/Page2/page2BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .page3 {
     background-image: url("/images/Page2/Sun_1.gif");
     background-repeat: no-repeat;
