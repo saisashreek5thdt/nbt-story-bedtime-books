@@ -1,7 +1,16 @@
+"use client"
+import { useState } from "react";
 import Image from "next/image";
 import FooterMain from "./_Components/FooterMain";
+import Modal from "./_Components/Modal";
+import LanguageBox from "./_Components/LanguageBox";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] bgHome overflow-hidden">
@@ -14,6 +23,7 @@ export default function Home() {
             quality={100}
             priority={true}
             className="w-14 h-14 animate-pulse cursor-pointer"
+            onClick={openModal}
           />
         </div>
         <div className="xl:w-[30rem] xl:max-h-80 mx-auto top-12 flex items-center justify-center">
@@ -25,11 +35,17 @@ export default function Home() {
             quality={100}
             priority={true}
             className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
-            style={{height: "auto", width: "auto"}}
+            style={{ height: "auto", width: "auto" }}
           />
         </div>
       </section>
       <FooterMain />
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        titleName="Select Your Language"
+        body={<LanguageBox />}
+      />
     </>
   );
 }
