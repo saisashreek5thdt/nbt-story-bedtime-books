@@ -2,7 +2,7 @@
 import FooterStory from "@/app/_Components/FooterStory";
 import React from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import TwoColumnLayout1 from "@/app/_Layouts/TwoColumnLayout1";
 
 function Page1() {
   const router = useRouter();
@@ -17,8 +17,7 @@ function Page1() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
-        <div className="flex gap-5">
+      {/* <div className="flex gap-5">
           <p className="p-16 text-justify text-xl font-medium select-none">
             Ten year old Veer is a very intelligent and curious boy. He and his
             Dadaji are great friends. They sleep in the same room. At bedtime
@@ -37,6 +36,20 @@ function Page1() {
               unoptimized
             />
           </div>
+        </div> */}
+      <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
+        <div className="container mx-auto px-4 py-8">
+          <TwoColumnLayout1
+            imageSrc="/images/Page1/page1GB.png"
+            altText="Grand Father Grand Son Table"
+          >
+            <p className="p-10 text-justify text-xl font-medium select-none">
+              Ten year old Veer is a very intelligent and curious boy. He and
+              his Dadaji are great friends. They sleep in the same room. At
+              bedtime before falling asleep, Dadaji makes up interesting stories
+              on any topic that he feels little Veer should be aware of.
+            </p>
+          </TwoColumnLayout1>
         </div>
       </section>
       <FooterStory
