@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import React from "react";
 import "./globals.css";
 import RootLayoutClient from "./RootLayoutClient";
@@ -11,7 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="select-none">
-        <RootLayoutClient>{children}</RootLayoutClient>
+        <RootLayoutClient>
+          {children}
+          <SpeedInsights />
+        </RootLayoutClient>
       </body>
     </html>
   );
