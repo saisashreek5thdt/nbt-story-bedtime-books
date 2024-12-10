@@ -7,7 +7,7 @@ function Page5() {
   const router = useRouter();
 
   const prevPageHandler = () => {
-    router.push("/eng/05");
+    router.push("/eng/04");
   };
 
   const nextPageHandler = () => {
