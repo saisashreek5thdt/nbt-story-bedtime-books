@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout2 from "@/app/_Layouts/TwoColumnLayout2";
+import TwoRowsTwoColumsLayout1 from "@/app/_Layouts/TwoRowsTwoColumsLayout1";
 
 function Page2() {
   const router = useRouter();
@@ -79,25 +80,41 @@ function Page2() {
           altText="bed grandfather grandson moon story"
         >
           <div className="flex flex-col gap-5 mx-auto my-28 pr-28">
-            <p className="text-justify text-lg font-medium select-none">
+            <p className="text-justify text-2xl font-medium select-none">
               Veer&apos;s school was soon to hold a workshop on Space. Veer
               wanted to actively participate in this workshop. He was very
               interested in learning about India&apos;s Space Research
-              Programme. The topic constantly played on his mind. One night,
-              after completing his homework, packing his bag for school, and
-              getting his uniform ready, Veer jumped into bed and snuggled
-              against Dadaji.
+              Programme.
             </p>
-            <p className="text-justify text-lg font-medium select-none">
+            <p className="text-justify text-2xl font-medium select-none">
+              The topic constantly played on his mind. One night, after
+              completing his homework, packing his bag for school, and getting
+              his uniform ready, Veer jumped into bed and snuggled against
+              Dadaji.
+            </p>
+            <p className="text-justify text-2xl font-medium select-none">
               Veer - Dadaji, tell me a story about space, the moon, and
               astronauts.
             </p>
           </div>
         </TwoColumnLayout2>
+        {/* <TwoRowsTwoColumsLayout1
+          imgSRC1="/images/Page1/moonBG.gif"
+          imgSRC2="/images/Page1/bed.png"
+          text1="Veer's school was soon to hold a workshop on Space. Veer
+              wanted to actively participate in this workshop. He was very
+              interested in learning about India's Space Research
+              Programme. The topic constantly played on his mind. One night,
+              after completing his homework, packing his bag for school, and
+              getting his uniform ready, Veer jumped into bed and snuggled
+              against Dadaji."
+          text2=" Veer - Dadaji, tell me a story about space, the moon, and
+              astronauts."
+        /> */}
       </section>
       <FooterStory
-        pageNum1={"02"}
-        pageNum2={"03"}
+        pageNum1={"03"}
+        pageNum2={"04"}
         onPrev={prevPageHandler}
         onNext={nextPageHandler}
       />

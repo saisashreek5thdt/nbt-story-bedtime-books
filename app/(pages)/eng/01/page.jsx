@@ -40,10 +40,10 @@ function Page1() {
       <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
         <div className="container mx-auto px-4 py-8">
           <TwoColumnLayout1
-            imageSrc="/images/Page1/page1GB.png"
+            imageSrc="/images/Page1/page1CG.png"
             altText="Grand Father Grand Son Table"
           >
-            <p className="p-10 text-justify text-xl font-medium select-none">
+            <p className="text-justify text-3xl font-medium select-none">
               Ten year old Veer is a very intelligent and curious boy. He and
               his Dadaji are great friends. They sleep in the same room. At
               bedtime before falling asleep, Dadaji makes up interesting stories
