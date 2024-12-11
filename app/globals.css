@@ -35,13 +35,19 @@
   }
 
   .page4 {
-    background-image: url("/images/pages/page3BG.png");
+    background-image: url("/images/page4/page4BG.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page5 {
     background-image: url("/images/Page5/Page5BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page6 {
+    background-image: url("/images/Page6/Page6BG.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

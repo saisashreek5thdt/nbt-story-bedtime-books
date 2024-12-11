@@ -16,7 +16,7 @@ function Page5() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] bg-cover select-none"></section>
+      <section className="w-[100vw] h-[100vh] page5 bg-cover select-none"></section>
       <FooterStory
         pageNum1={"08"}
         pageNum2={"09"}
