@@ -52,6 +52,12 @@
     background-size: cover;
   }
 
+  .page7 {
+    background-image: url("/images/Page7/Page7BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .quizBG {
     background-image: url("/images/home/bg-home-2.png");
     background-repeat: no-repeat;
