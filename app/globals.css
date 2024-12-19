@@ -11,19 +11,19 @@
   }
 
   .bgHome {
-    background-image: url("/images/home/bg-home-2.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583774/NBT-Chandrayaan3/assets/coverImages/home/ccn7ytwb0cf03bbcpbp2.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page1 {
-    background-image: url("/images/Page1/page1BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734586182/NBT-Chandrayaan3/assets/bgImages/page1/ku77xzmjqiuaysavtr0w.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page2 {
-    background-image: url("/images/Page2/page2BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734589046/NBT-Chandrayaan3/assets/bgImages/page2/uuucvktxph2wbnmkfbym.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -35,25 +35,43 @@
   }
 
   .page4 {
-    background-image: url("/images/page4/page4BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600374/NBT-Chandrayaan3/assets/bgImages/page4/meqlzft8lspwqhgc28pw.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page5 {
-    background-image: url("/images/Page5/Page5BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600462/NBT-Chandrayaan3/assets/bgImages/page5/wbsucpt9psrnckctmuxc.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page6 {
-    background-image: url("/images/Page6/Page6BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600527/NBT-Chandrayaan3/assets/bgImages/page6/dcnxncemahivxl1f3zmo.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .page7 {
-    background-image: url("/images/Page7/Page7BG.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600583/NBT-Chandrayaan3/assets/bgImages/page7/rhqhe2yvsr3bju6zouov.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page8 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600873/NBT-Chandrayaan3/assets/bgImages/page8/ife8c4jvcm6v4s7cytb7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page9 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734600919/NBT-Chandrayaan3/assets/bgImages/page9/tronaohxdtcnqtommfqf.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page10 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734601267/NBT-Chandrayaan3/assets/bgImages/page10/qylalkxzceli2q7jaloo.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

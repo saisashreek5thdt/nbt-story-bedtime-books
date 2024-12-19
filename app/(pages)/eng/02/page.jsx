@@ -3,8 +3,8 @@ import FooterStory from "@/app/_Components/FooterStory";
 import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/navigation";
-import TwoColumnLayout2 from "@/app/_Layouts/TwoColumnLayout2";
-import TwoRowsTwoColumsLayout1 from "@/app/_Layouts/TwoRowsTwoColumsLayout1";
+import TwoColumnLayout3 from "@/app/_Layouts/TwoColumnLayout3";
+import { getCldImageUrl } from 'next-cloudinary';
 
 function Page2() {
   const router = useRouter();
@@ -16,6 +16,23 @@ function Page2() {
   const nextPageHandler = () => {
     router.push("/eng/03");
   };
+
+  let imgURL1 = getCldImageUrl({
+    src: 'NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv',
+    width: 960,
+    height: 600,
+    fillBackground: true,
+    crop: 'auto'
+  });
+
+  let imgURL2 = getCldImageUrl({
+    src: 'NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d',
+    width: 960,
+    height: 600,
+    fillBackground: true,
+    crop: 'auto'
+  })
+
 
   return (
     <>
@@ -74,10 +91,17 @@ function Page2() {
             </p>
           </div>
         </div> */}
-        <TwoColumnLayout2
-          className="w-full h-full bg-cover my-10"
-          imageSrc="/images/Page1/bed.png"
+        <TwoColumnLayout3
+          className="w-full h-full bg-cover"
+          imageSrc={imgURL1}
           altText="bed grandfather grandson moon story"
+          width={1034}
+          height={702}
+          imageSrc1={imgURL2}
+          altText1="Moon Earth Satelite Space"
+          width1={500}
+          height1={250}
+          className1="w-full h-full bg-cover"
         >
           <div className="flex flex-col gap-5 mx-auto my-28 pr-28">
             <p className="text-justify text-2xl font-medium select-none">
@@ -97,7 +121,7 @@ function Page2() {
               astronauts.
             </p>
           </div>
-        </TwoColumnLayout2>
+        </TwoColumnLayout3>
         {/* <TwoRowsTwoColumsLayout1
           imgSRC1="/images/Page1/moonBG.gif"
           imgSRC2="/images/Page1/bed.png"

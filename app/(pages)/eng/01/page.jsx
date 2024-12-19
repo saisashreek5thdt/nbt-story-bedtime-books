@@ -3,6 +3,7 @@ import FooterStory from "@/app/_Components/FooterStory";
 import React from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout1 from "@/app/_Layouts/TwoColumnLayout1";
+import { getCldImageUrl } from 'next-cloudinary';
 
 function Page1() {
   const router = useRouter();
@@ -14,6 +15,14 @@ function Page1() {
   const nextPageHandler = () => {
     router.push("/eng/02");
   };
+
+  let imgURL1 = getCldImageUrl({
+      src: 'NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf',
+      width: 139,
+      height: 92,
+      fillBackground: true,
+      crop: 'auto'
+    });
 
   return (
     <>
@@ -40,8 +49,11 @@ function Page1() {
       <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
         <div className="container mx-auto px-4 py-8">
           <TwoColumnLayout1
-            imageSrc="/images/Page1/page1CG.png"
+            imageSrc={imgURL1}
             altText="Grand Father Grand Son Table"
+            width="139"
+            height="92"
+            className="bg-cover block ml-[30rem]"
           >
             <p className="text-justify text-3xl font-medium select-none">
               Ten year old Veer is a very intelligent and curious boy. He and

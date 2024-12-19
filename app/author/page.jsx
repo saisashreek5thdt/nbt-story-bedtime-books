@@ -1,18 +1,18 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import FooterPage from "../_Components/FooterPage";
 import { useRouter } from "next/navigation";
+import { CldImage } from "next-cloudinary";
 
 function Author() {
-
   const router = useRouter();
 
   const NextPageBtnHandler = (e) => {
     e.preventDefault();
-    router.push("/eng/01")
-  }
+    router.push("/eng/01");
+  };
 
   return (
     <>
@@ -42,19 +42,27 @@ function Author() {
               events.
             </p>
             <Link href="mailto:yuvrajmalik117@gmail.com">
-            <p className="text-justify text-lg leading-8 font-bold text-slate-800">
-              Send Me an Email
-            </p>
+              <p className="text-justify text-lg leading-8 font-bold text-slate-800">
+                Send Me an Email
+              </p>
             </Link>
           </div>
           <div className="mx-auto md:my-1 lg:my-3 xl:my-0 flex items-center justify-center">
-            <Image
+            {/* <Image
               src="/images/author/author.jpg"
               alt="Yuvraj Malik"
               width={550}
               height={100}
               priority={true}
               quality={100}
+              className="md:h-[55vh] lg:h-[60vh] xl:h-[70vh] shadow-lg"
+            /> */}
+            <CldImage
+              src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734585149/NBT-Chandrayaan3/assets/author/nx1z2v99wxw3egsvgpja.jpg"
+              width={493}
+              height={506}
+              crop={{ type: "auto", source: true }}
+              alt="Yuvraj Malik Image"
               className="md:h-[55vh] lg:h-[60vh] xl:h-[70vh] shadow-lg"
             />
           </div>
