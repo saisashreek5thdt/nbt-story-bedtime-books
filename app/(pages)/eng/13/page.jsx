@@ -16,7 +16,7 @@ export default function Page13() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] bg-cover select-none"></section>
+      <section className="w-[100vw] h-[100vh] bg-cover page13 select-none"></section>
       <FooterStory
         pageNum1={"24"}
         pageNum2={"25"}
