@@ -1,10 +1,9 @@
 "use client";
 import FooterStory from "@/app/_Components/FooterStory";
-import Image from "next/image";
 import React from "react";
 import { useRouter } from "next/navigation";
-import TwoColumnLayout3 from "@/app/_Layouts/TwoColumnLayout3";
-import { getCldImageUrl } from 'next-cloudinary';
+import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
+import { getCldImageUrl } from "next-cloudinary";
 
 function Page2() {
   const router = useRouter();
@@ -18,21 +17,28 @@ function Page2() {
   };
 
   let imgURL1 = getCldImageUrl({
-    src: 'NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv',
-    width: 960,
-    height: 600,
-    fillBackground: true,
-    crop: 'auto'
+    src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
   });
 
   let imgURL2 = getCldImageUrl({
-    src: 'NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d',
-    width: 960,
-    height: 600,
-    fillBackground: true,
-    crop: 'auto'
-  })
+    src: "NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d",
+    // width: 960,
+    // height: 600,
+    // fillBackground: true,
+    // crop: 'auto'
+  });
 
+  // let imgURL1 = getCldImageUrl({
+  //   src: "NBT-Chandrayaan3/assets/fgImages/page2/gd2m5ir1xdflrfxxfduv",
+  // });
+
+  // let imgURL2 = getCldImageUrl({
+  //   src: "NBT-Chandrayaan3/assets/fgImages/page2/marjuyovclvtt9mld98d",
+  // });
 
   return (
     <>
@@ -91,7 +97,7 @@ function Page2() {
             </p>
           </div>
         </div> */}
-        <TwoColumnLayout3
+        {/* <TwoColumnLayout3
           className="w-full h-full bg-cover"
           imageSrc={imgURL1}
           altText="bed grandfather grandson moon story"
@@ -121,7 +127,7 @@ function Page2() {
               astronauts.
             </p>
           </div>
-        </TwoColumnLayout3>
+        </TwoColumnLayout3> */}
         {/* <TwoRowsTwoColumsLayout1
           imgSRC1="/images/Page1/moonBG.gif"
           imgSRC2="/images/Page1/bed.png"
@@ -135,6 +141,111 @@ function Page2() {
           text2=" Veer - Dadaji, tell me a story about space, the moon, and
               astronauts."
         /> */}
+        {/* <div className="grid grid-rows-2 grid-cols-2 grid-flow-col h-1/2 ">
+          <div className=" h-48 ml-40 mt-8 w-3/4 flex gap-4 flex-col">
+            <p className="text-justify text-lg font-medium select-none">
+              Veer&apos;s school was soon to hold a workshop on Space. Veer
+              wanted to actively participate in this workshop. He was very
+              interested in learning about India&apos;s Space Research
+              Programme.
+            </p>
+            <p className="text-justify text-lg font-medium select-none">
+              The topic constantly played on his mind. One night, after
+              completing his homework, packing his bag for school, and getting
+              his uniform ready, Veer jumped into bed and snuggled against
+              Dadaji.
+            </p>
+            <p className="text-justify text-lg font-medium select-none">
+              Veer - Dadaji, tell me a story about space, the moon, and
+              astronauts.
+            </p>
+          </div>
+          <div className="">
+            <Image
+              src={imgURL1}
+              alt="bed grandfather grandson moon story"
+              className="bg-cover "
+              width={700}
+              height={200}
+              priority={true}
+              quality={100}
+            />
+          </div>
+          <div className=" ml-52">
+            <Image
+              src={imgURL2}
+              alt="bed grandfather grandson moon story"
+              className="bg-cover"
+              width={1000}
+              height={350}
+              priority={true}
+              quality={100}
+            />
+          </div>
+          <div className="w-4/5 mt-52 flex gap-4 flex-col">
+            <p className="text-justify text-lg font-medium select-none">
+              Veer&apos;s school was soon to hold a workshop on Space. Veer
+              wanted to actively participate in this workshop. He was very
+              interested in learning about India&apos;s Space Research
+              Programme. The topic constantly played on his mind. One night,
+              after completing his homework, packing his bag for school, and
+              getting his uniform ready, Veer jumped into bed and snuggled
+              against Dadaji.
+            </p>
+            <p className="text-justify text-lg font-medium select-none">
+              Veer - Dadaji, tell me a story about space, the moon, and
+              astronauts.
+            </p>
+          </div>
+        </div> */}
+        <TwoColumnLayout4
+          textContent1={
+            <>
+              <p className="text-justify text-lg font-medium select-none">
+                Veer&apos;s school was soon to hold a workshop on Space. Veer
+                wanted to actively participate in this workshop. He was very
+                interested in learning about India&apos;s Space Research
+                Programme.
+              </p>
+              <p className="text-justify text-lg font-medium select-none">
+                The topic constantly played on his mind. One night, after
+                completing his homework, packing his bag for school, and getting
+                his uniform ready, Veer jumped into bed and snuggled against
+                Dadaji.
+              </p>
+              <p className="text-justify text-lg font-medium select-none">
+                Veer - Dadaji, tell me a story about space, the moon, and
+                astronauts.
+              </p>
+            </>
+          }
+          textContent2={
+            <>
+              <p className="text-justify text-lg font-medium select-none">
+                Veer&apos;s school was soon to hold a workshop on Space. Veer
+                wanted to actively participate in this workshop. He was very
+                interested in learning about India&apos;s Space Research
+                Programme. The topic constantly played on his mind. One night,
+                after completing his homework, packing his bag for school, and
+                getting his uniform ready, Veer jumped into bed and snuggled
+                against Dadaji.
+              </p>
+              <p className="text-justify text-lg font-medium select-none">
+                Veer - Dadaji, tell me a story about space, the moon, and
+                astronauts.
+              </p>
+            </>
+          }
+          imageSrc1={imgURL1}
+          altText1="bed grandfather grandson moon story"
+          width1={700}
+          height1={200}
+          imageSrc2={imgURL2}
+          altText2="bed grandfather grandson moon story"
+          width2={1000}
+          height2={350}
+          className="mt-8"
+        ></TwoColumnLayout4>
       </section>
       <FooterStory
         pageNum1={"03"}
