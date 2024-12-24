@@ -20,7 +20,7 @@ function Page5() {
   });
 
   const imgURL2 = getCldImageUrl({
-    src: "NBT-Chandrayaan3/assets/fgImages/page5/jzrvvi6vpyad3gxef6ar",
+    src: "NBT-Chandrayaan3/assets/fgImages/page5/xpjmjn2oo14z4nv0uyx1",
   });
 
   return (

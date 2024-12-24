@@ -17,8 +17,8 @@ export default function Page10() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page10 select-none">
-        <div className="text-black pl-64 py-20 text-justify text-lg flex flex-row-reverse">
-          <div className="w-1/2 flex pr-8  flex-col gap-4">
+        <div className="text-black text-justify text-lg font-medium pl-64 py-20 flex flex-row-reverse">
+          <div className="w-1/2 flex pr-8 flex-col gap-4">
             <p>
               Veer was amazed. But he felt that Dadaji had started talking about
               something else now. Getting impatient, he gently returned to the

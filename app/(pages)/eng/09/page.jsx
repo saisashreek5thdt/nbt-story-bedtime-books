@@ -17,13 +17,13 @@ export default function Page9() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page9 select-none">
-        <div className="flex p-16 gap-10 text-2xl pr-80 text-justify">
+        <div className="flex p-16 pr-80 gap-10 text-2xl text-justify font-medium">
           <div className="flex flex-col gap-4">
-            <p className="">
+            <p>
               Dadaji was expecting this question. He knew that Veer wanted to
               get into the root of the matter. He was prepared to answer.{" "}
             </p>
-            <p className="">
+            <p>
               Dadaji - For over fourteen hundred years, Cruel invaders attacked
               out land, ruled it, and caused great harm. They destroyed the
               famous universities of Nalanda, Takshashilla, and Vikramshilla,
@@ -32,7 +32,7 @@ export default function Page9() {
             </p>
           </div>
           <div className="pl-32">
-            <p className="">
+            <p>
               Just imagine! Veer, the great mathematician Aryabhatt who
               discovered &apos;Zero&apos; was an esteemed teacher at Nalanda University.
               The Chinese scholar Hiuen Tsang studied at Nalanda University and

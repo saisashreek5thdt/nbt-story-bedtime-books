@@ -17,14 +17,14 @@ export default function Page14() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page14 select-none">
-        <div className="text-white pl-28  pt-80 text-justify text-2xl flex flex-row-reverse">
+        <div className="text-white text-justify text-2xl font-medium pl-28 pt-80 flex flex-row-reverse">
           <div className="w-1/2 flex flex-col pr-10 gap-4">
-            <p className="">
+            <p>
               Dadaji - Veer, first of all you should know that Chandrayaan is
               the name of the Indian Lunar Exploration Program.
             </p>
 
-            <p className="">
+            <p>
               India launched Chandrayaan 2 in 2019. The lander was on the right
               path, but unfortunately due to a small error, communication was
               lost in the final 300 meters, and it could not make a smooth

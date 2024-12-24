@@ -2,6 +2,8 @@
 import FooterStory from "@/app/_Components/FooterStory";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { getCldImageUrl } from "next-cloudinary";
+import Image from "next/image";
 
 export default function Page15() {
   const router = useRouter();
@@ -14,10 +16,25 @@ export default function Page15() {
     router.push("/eng/16");
   };
 
+  const imgURL = getCldImageUrl({
+    src: "NBT-Chandrayaan3/assets/fgImages/page15/p5yzrsqdkrmcqsu780dz",
+  });
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page15 select-none">
-        <div className="text-black pl-28 pr-10 pt-16 text-justify text-2xl flex flex-row-reverse">
+        <div className="flex ">
+          <Image
+            src={imgURL}
+            alt="image1"
+            className="  bg-cover mt-40"
+            width={600}
+            height={500}
+            quality={100}
+            objectFit="cover"
+          />
+        </div>
+        <div className="text-black text-justify text-2xl font-medium -mt-[650px] pl-28 pr-10 pt-16 flex flex-row-reverse">
           <div className="w-1/2 flex flex-col pr-10 gap-4">
             <p>Veer nodded as he gulped down the now cold milk.</p>
             <p>He faintly remembered watching this news five years ago.</p>

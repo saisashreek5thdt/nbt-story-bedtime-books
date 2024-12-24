@@ -17,8 +17,8 @@ function Page6() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] page6 bg-cover select-none">
-        <div className="flex text-white px-16 pt-20 gap-12 text-xl ">
-          <div className="text-justify flex pl-3 flex-col gap-4">
+        <div className="flex text-justify text-white text-xl font-medium px-16 pt-20 gap-12">
+          <div className="flex pl-3 flex-col gap-4">
             <p>
               Veer was getting impatient. This was not the story he wanted to
               listen tonight.
@@ -32,7 +32,7 @@ function Page6() {
               about that heading.
             </p>
           </div>
-          <div className="">
+          <div>
             <p>
               Veer - Wow! I can&apos; wait to know more. Tell me all, Dadaji.
               All the news channels too were very proudly broadcasting

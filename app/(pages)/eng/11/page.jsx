@@ -16,7 +16,7 @@ export default function Page11() {
   };
 
   const imgURL1 = getCldImageUrl({
-    src: "NBT-Chandrayaan3/assets/fgImages/page5/jzrvvi6vpyad3gxef6ar",
+    src: "NBT-Chandrayaan3/assets/fgImages/page11/ibq1kx9fqjricropqfde",
   });
 
   return (
@@ -26,14 +26,14 @@ export default function Page11() {
           <Image
             src={imgURL1}
             alt="image1"
-            className="  bg-cover top-0 left-0 -mt-20"
-            width={1000}
+            className="  bg-cover top-0 left-0 -mt-24"
+            width={900}
             height={800}
             quality={100}
             objectFit="cover"
           />
-          <div className="text-black pl-56 pt-24  text-justify text-lg flex flex-row-reverse">
-            <div className=" flex pr-8  flex-col gap-4">
+          <div className="text-black text-justify text-xl font-medium pr-9 pt-24 flex flex-row-reverse">
+            <div className=" flex pr-8 flex-col gap-4">
               <p>
                 Veer - I know. I saw the satellites video on youtube. It was so
                 interesting. Tell me Dadaji, what is so special about

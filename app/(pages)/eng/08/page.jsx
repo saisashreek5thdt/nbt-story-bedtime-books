@@ -33,8 +33,8 @@ export default function Page8() {
             quality={100}
             objectFit="cover"
           />
-          <div className="text-black pr-10 py-20 text-justify text-2xl flex flex-row-reverse">
-            <div className=" flex pr-8  flex-col gap-4">
+          <div className="text-black text-justify text-2xl font-medium pr-10 py-20 flex flex-row-reverse">
+            <div className="flex pr-8 flex-col gap-4">
               <p>
                 Dadaji - Thousands of years before people could not even dream
                 of space and aircrafts, ancient Indian wise men had compiled the

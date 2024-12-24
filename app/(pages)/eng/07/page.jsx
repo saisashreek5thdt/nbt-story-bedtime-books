@@ -17,7 +17,7 @@ function Page7() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] page7 bg-cover select-none">
-        <div className="flex text-black px-16 pt-20 gap-12 text-xl ">
+        <div className="flex text-black text-xl font-medium px-16 pt-20 gap-12">
           <p>
             Dadaji - Veer, this is what everyone has been made to believe. The
             fact is, that other nations have explored space just a few decades
@@ -27,7 +27,7 @@ function Page7() {
             world?
           </p>
           <p>
-            Veer&apos; eyes widened. He had not known this about his country. He
+            Veer&apos;s eyes widened. He had not known this about his country. He
             became even more alert and intrested in what Dadaji was saying. Ths
             clever grandpa knew that Veer was keen to learn of the glory of
             India&apos;s past. He continued on the same lines.
