@@ -35,10 +35,19 @@ export default function Page8() {
           />
           <div className="text-black pr-10 py-20 text-justify text-2xl flex flex-row-reverse">
             <div className=" flex pr-8  flex-col gap-4">
-              <p>Dadaji - Thousands of years before people could not even dream of space and aircrafts, ancient Indian wise men had compiled the Vimaanshastra, or the science of flying. Gods and kings often covered long distances on their flying chariots.</p>
-              <p>Veer - Yes, Dadaji, I remember! In the Ramayana too, Ravana kidnapped Sita and flew in his Pushpak Vimaan. But then, why did it take us so long to explore space?</p>
+              <p>
+                Dadaji - Thousands of years before people could not even dream
+                of space and aircrafts, ancient Indian wise men had compiled the
+                Vimaanshastra, or the science of flying. Gods and kings often
+                covered long distances on their flying chariots.
+              </p>
+              <p>
+                Veer - Yes, Dadaji, I remember! In the Ramayana too, Ravana
+                kidnapped Sita and flew in his Pushpak Vimaan. But then, why did
+                it take us so long to explore space?
+              </p>
             </div>
-        </div>
+          </div>
         </div>
       </section>
       <FooterStory

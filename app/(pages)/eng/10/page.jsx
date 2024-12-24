@@ -18,11 +18,24 @@ export default function Page10() {
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page10 select-none">
         <div className="text-black pl-64 py-20 text-justify text-lg flex flex-row-reverse">
-            <div className="w-1/2 flex pr-8  flex-col gap-4">
-              <p>Veer was amazed. But he felt that Dadaji had started talking about something else now. Getting impatient, he gently returned to the topic he wanted to discuss</p>
-              <p>Veer - OK. But now we have been a free nation for more than 75 years. What are we doing now?</p>
-              <p>Dadaji- Yes. You are right. In the last ten years,India has made great progress in space exploration. We have become atmanirbhar(self-reliant) in all fields from sea to the space and talent to technology. India now holds the world record for sending 104 satellites in just one day!</p>
-            </div>
+          <div className="w-1/2 flex pr-8  flex-col gap-4">
+            <p>
+              Veer was amazed. But he felt that Dadaji had started talking about
+              something else now. Getting impatient, he gently returned to the
+              topic he wanted to discuss
+            </p>
+            <p>
+              Veer - OK. But now we have been a free nation for more than 75
+              years. What are we doing now?
+            </p>
+            <p>
+              Dadaji- Yes. You are right. In the last ten years,India has made
+              great progress in space exploration. We have become
+              atmanirbhar(self-reliant) in all fields from sea to the space and
+              talent to technology. India now holds the world record for sending
+              104 satellites in just one day!
+            </p>
+          </div>
         </div>
       </section>
       <FooterStory
