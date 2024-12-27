@@ -1,8 +1,9 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import "./globals.css";
 import RootLayoutClient from "./RootLayoutClient";
+import { GlobalStateProvider } from "./context/GlobalStateContext";
 
 export const metadata = {
   title: "NBT - Chandrayan 3",
@@ -13,11 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="select-none">
-        <RootLayoutClient>
-          {children}
-          <SpeedInsights />
-          <Analytics />
-        </RootLayoutClient>
+        <GlobalStateProvider>
+          <RootLayoutClient>
+            {children}
+            <SpeedInsights />
+            <Analytics />
+          </RootLayoutClient>
+        </GlobalStateProvider>
       </body>
     </html>
   );

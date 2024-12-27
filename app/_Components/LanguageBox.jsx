@@ -1,44 +1,35 @@
+"use client";
 import React from "react";
+import { useGlobalState } from "../context/GlobalStateContext";
 import { useRouter } from "next/navigation";
 
 function LanguageBox() {
-  const navigate = useRouter();
+  const { state, setLanguage } = useGlobalState();
+  const router = useRouter();
+  const { currentPath } = state;
 
-  const engLangHandler = (e) => {
-    e.preventDefault();
-    navigate.push("/eng/01");
+  const changeLanguage = (lang) => {
+    setLanguage(lang);  // Update the global language state
+
+    if (currentPath && currentPath !== "/") {
+      // Navigate to the current path if it's valid
+      router.push(currentPath);  
+    } 
   };
 
   return (
     <>
       <div className="grid grid-cols-4 gap-4">
-        <button
-          className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition"
-          onClick={engLangHandler}
-        >
-          English
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          हिंदी
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          తెలుగు
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          தமிழ்
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          অসমীয়
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          ગુજરાત
-        </button>
-        <button className="bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          ಕನ್ನಡ
-        </button>
-        <button className="bg-[#e25a71] text-white text-center py-2 px-2 pr-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition">
-          മലയാളം
-        </button>
+        {/* Render buttons for each language */}
+        {['English', 'हिंदी', 'తెలుగు', 'தமிழ்', 'অসমীয়', 'ગુજરાત', 'ಕನ್ನಡ', 'മലയാളം'].map((lang) => (
+          <button
+            key={lang}
+            className={`bg-[#e25a71] text-white py-2 px-4 rounded-lg shadow-lg hover:bg-[#c4122f] transition ${state.lang === lang ? "brightness-110" : ""}`}
+            onClick={() => changeLanguage(lang)}  // Change language and navigate to the current path
+          >
+            {lang}
+          </button>
+        ))}
       </div>
     </>
   );

@@ -11,7 +11,7 @@ function Author() {
 
   const NextPageBtnHandler = (e) => {
     e.preventDefault();
-    router.push("/eng/01");
+    router.push("/page/01");
   };
 
   return (
