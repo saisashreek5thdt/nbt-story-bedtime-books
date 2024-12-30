@@ -1,11 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import FooterStory from "@/app/_Components/FooterStory";
-import React from "react";
+import React,{useEffect} from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
 import { getCldImageUrl } from "next-cloudinary";
-import { lang } from "../../../utils/lang";
+import { lang } from "../../../utils/lang.json";
+import { useGlobalState } from "@/app/context/GlobalStateContext";
 
 export default function Page2() {
   const router = useRouter();

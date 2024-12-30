@@ -28,7 +28,7 @@ function Page5() {
       <section className="w-full h-screen bg-cover page5 select-none">
         <div className="grid grid-rows-2 grid-cols-2 gap-4 h-full p-6">
           {/* Top-left (Text Section 1) */}
-          <div className="flex flex-col gap-4 mt-10 ml-10 text-justify text-2xl font-medium sm:gap-1 sm:-mt-2 sm:ml-2 sm:text-sm lg:gap-4 lg:mt-10 lg:ml-10 lg:text-justify lg:text-2xl">
+          <div className="flex flex-col gap-4 mt-2 ml-10 text-justify text-2xl font-medium sm:gap-1 sm:-mt-2 sm:ml-2 sm:text-sm lg:gap-4 lg:mt-2 lg:ml-10 lg:text-justify lg:text-2xl">
             <p>Saint Tell me, little one, how big is the moon?</p>
             <p>Princess - It is as wide as my index finger.</p>
             <p>

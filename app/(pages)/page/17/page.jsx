@@ -17,8 +17,8 @@ export default function Page17() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page17 select-none">
-        <div className="flex pl-16 pt-10  gap-10 text-2xl pr-40 text-justify">
-          <div className="flex w-[200px] flex-col gap-4 ">
+        <div className="flex pl-16 pt-16 w-full  gap-20 text-2xl pr-40 text-justify">
+          <div className="flex w-1/2 flex-col gap-4 ">
             <p>
               Veer - What will this rover do on the moon? Nobody stays there.
               How will it help us?
@@ -30,7 +30,7 @@ export default function Page17() {
               surface, its soil, gases, metals and minerals.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex w-1/2  flex-col gap-4">
             <p>
               Veer smiled sheepishly. He wanted to show Dadaji that he was not a
               little boy. He knew a lot!

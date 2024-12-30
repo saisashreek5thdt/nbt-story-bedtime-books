@@ -5,7 +5,7 @@ import FooterStory from "@/app/_Components/FooterStory";
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
-import { lang } from "../../../utils/lang";
+import { lang } from "../../../utils/lang.json";
 
 export default function Page3() {
   const router = useRouter();
@@ -37,7 +37,7 @@ export default function Page3() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] page3 bg-cover select-none">
-        <div className="ml-[45rem] py-[4rem] flex flex-col justify-center gap-3 text-slate-800 text-2xl text-justify font-medium">
+        <div className="w-1/2 ml-[45rem] pl-10 pt-20 flex flex-col justify-center gap-3 text-slate-800 text-xl text-justify font-medium">
           {Array.isArray(para1) && para1.length > 0 ? (
             para1.map((text, index) => (
               <p
