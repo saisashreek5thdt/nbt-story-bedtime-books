@@ -29,13 +29,13 @@ function Page5() {
         <div className="grid grid-rows-2 grid-cols-2 gap-4 h-full p-6">
           {/* Top-left (Text Section 1) */}
           <div className="flex flex-col gap-4 mt-2 ml-10 text-justify text-2xl font-medium sm:gap-1 sm:-mt-2 sm:ml-2 sm:text-sm lg:gap-4 lg:mt-2 lg:ml-10 lg:text-justify lg:text-2xl">
-            <p>Saint Tell me, little one, how big is the moon?</p>
+            <p>Saint - Tell me, little one, how big is the moon?</p>
             <p>Princess - It is as wide as my index finger.</p>
             <p>
               When I lift it towards the moon, it completely covers it, and then
               I can&apos;t see the moon at all.
             </p>
-            <p>Saint-Do you know how high it is?</p>
+            <p>Saint - Do you know how high it is?</p>
             <p>
               Princess - It&apos;s visible just above that tree in the palace
               garden.

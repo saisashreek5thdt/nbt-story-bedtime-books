@@ -29,5 +29,14 @@ module.exports = {
       },
     }
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('landscape', '@media (orientation: landscape)');
+    }
+  ],
+  variants: {
+    extend: {
+      display: ['landscape'],
+    },
+  },
 };

@@ -4,13 +4,17 @@ import Image from "next/image";
 import FooterMain from "./_Components/FooterMain";
 import Modal from "./_Components/Modal";
 import LanguageBox from "./_Components/LanguageBox";
-import { CldImage } from "next-cloudinary";
+import { CldImage, getCldImageUrl } from "next-cloudinary";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  const imgURL = getCldImageUrl({
+    src: "NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd",
+  });
 
   return (
     <>
@@ -39,12 +43,12 @@ export default function Home() {
             style={{ height: "auto", width: "auto" }}
           /> */}
           <CldImage
-            src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583824/NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd.png"
-            className=" sm:w-[320px] sm:h-[300px] -mt-28 2xl:w-[38rem] 2xl:bottom-48"
+            src={imgURL}
+            className="bg-cover sm:w-[320px] sm:h-[300px] sm:-mt-28 lg:w-[550px] lg:h-[550px] lg:mt-10 xl:mt-5 xl:w-[38rem] xl:bottom-48"
             width={2362}
             height={2834}
             crop={{ type: "auto", source: true }}
-            alt="Chandrayaan3 Cover Page"            
+            alt="Chandrayaan3 Cover Page"
           />
         </div>
       </section>

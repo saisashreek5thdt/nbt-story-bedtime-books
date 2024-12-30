@@ -1,3 +1,4 @@
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
@@ -11,12 +12,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="select-none">
         <GlobalStateProvider>
-          <RootLayoutClient>
-            {children}
+          <RootLayoutClient>            
+            { children }
             <SpeedInsights />
             <Analytics />
           </RootLayoutClient>

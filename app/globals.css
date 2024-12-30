@@ -138,3 +138,7 @@
     background-size: cover;
   }
 }
+
+@media only screen and (orientation:landscape) {
+  .page1 { display:block; }
+}

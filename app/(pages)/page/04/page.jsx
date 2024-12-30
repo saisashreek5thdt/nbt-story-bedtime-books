@@ -51,7 +51,6 @@ export default function Page4() {
             One day, a saint came and took the challange. He asked the king to
             bring his daughter before him.
           </p>
-          <p>Saint - Tell me, little one, how big is the moon?</p>
         </div>
       </section>
       <FooterStory

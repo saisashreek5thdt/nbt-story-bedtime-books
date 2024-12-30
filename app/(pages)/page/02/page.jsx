@@ -56,13 +56,13 @@ export default function Page2() {
                 para1.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify text-2xl font-medium select-none"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify text-2xl font-medium select-none">
                   No content available.
                 </p>
               )}
@@ -74,13 +74,13 @@ export default function Page2() {
                 para2.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify text-2xl font-medium select-none"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify text-2xl font-medium select-none">
                   No content available.
                 </p>
               )}
@@ -90,7 +90,7 @@ export default function Page2() {
           altText1="bed grandfather grandson moon story"
           width1={700}
           height1={200}
-          imageSrc2={imgURL2}
+          imageSrc2="/images/Page1/moonBG.gif"
           altText2="bed grandfather grandson moon story"
           width2={1000}
           height2={350}
