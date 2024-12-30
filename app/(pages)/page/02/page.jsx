@@ -56,13 +56,13 @@ export default function Page2() {
                 para1.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify text-2xl sm:text-[15px] sm:leading-4 font-medium select-none lg:text-xl lg:leading-8"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify text-2xl sm:text-sm font-medium select-none lg:text-lg">
                   No content available.
                 </p>
               )}
@@ -74,13 +74,13 @@ export default function Page2() {
                 para2.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify text-2xl sm:text-[15px] sm:leading-4 font-medium select-none lg:text-xl lg:leading-8"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify text-2xl lg:text-lg sm:text-sm font-medium select-none">
                   No content available.
                 </p>
               )}

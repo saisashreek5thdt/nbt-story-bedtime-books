@@ -44,7 +44,7 @@ export default function Page1() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
+      <section className="w-[100vw] h-[100vh] page1 min-h-screen bg-cover select-none">
         <div className="container mx-auto px-4 py-8">
           <TwoColumnLayout1
             // imageSrc={imgURL1}
@@ -53,7 +53,7 @@ export default function Page1() {
             // height="92"
             // className="bg-cover block ml-[30rem]"
           >
-            <p className="text-justify text-3xl sm:text-lg md:text-xl lg:text-2xl sm:-ml-5 sm:-mt-8 sm:w-4/5 font-medium select-none">
+            <p className="text-justify sm:text-lg sm:-ml-5 sm:-mt-8 sm:w-4/5 md:text-xl md:max-w-full lg:text-2xl text-3xl font-medium select-none">
               {para1}
             </p>
           </TwoColumnLayout1>

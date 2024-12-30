@@ -15,15 +15,15 @@ function TwoColumnLayout4({
 }) {
   return (
     <div className={`grid grid-rows-2 grid-cols-2 grid-flow-col h-1/2 `}>
-      <div className="h-48 ml-40 mt-8 w-3/4 flex gap-4 flex-col">
+      <div className="h-48 ml-40 mt-8 w-3/4 sm:w-5/6 flex gap-4 flex-col sm:ml-10 sm:mt-8 sm:gap-2 lg:h-48 lg:ml-40 lg:mt-24 lg:w-3/4">
         {textContent1}
       </div>
 
-      <div>
+      <div className="">
         <Image
           src={imageSrc1}
           alt={altText1}
-          className="bg-cover"
+          className="bg-cover sm:w-[400px] sm:h-[280px] sm:-mt-4 lg:w-[750px] lg:h-[500px] lg:mt-8"  
           width={width1}
           height={height1}
           priority={true}
@@ -33,9 +33,9 @@ function TwoColumnLayout4({
 
       <div className="ml-52">
         <Image
-          src={imageSrc2}
+          src="/images/Page1/moonBG.gif"
           alt={altText2}
-          className="bg-cover"
+          className="bg-cover sm:w-[400px] sm:h-[200px] sm:-mt-[2px] sm:-mr-2 lg:w-[750px] lg:h-[400px] lg:-mt-2 lg:ml-2"
           width={width2}
           height={height2}
           priority={true}
@@ -43,7 +43,7 @@ function TwoColumnLayout4({
         />
       </div>
 
-      <div className="w-4/5 mt-52 flex gap-4 flex-col">{textContent2}</div>
+      <div className="w-4/5 mt-52  sm:mt-24 sm:ml-8 sm:w-5/6 lg:w-4/5 lg:mt-56 flex gap-4 flex-col">{textContent2}</div>
     </div>
   );
 }

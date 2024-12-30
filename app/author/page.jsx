@@ -18,7 +18,7 @@ function Author() {
     <>
       <section className="w-[100vw] h-[100vh] bg-cover select-none">
         <div className="mx-auto md:p-3 lg:p-1 xl:p-16 grid grid-cols-2 gap-4">
-          <div className="md:py-2 lg:py-1 xl:py-0 flex flex-col md:gap-2 lg:gap-2">
+          <div className="sm:p-5 md:py-2 lg:py-1 xl:py-0 flex flex-col md:gap-2 lg:gap-2">
             <h2 className="text-start text-2xl font-medium sm:text-base lg:text-lg">About Author</h2>
             <p className="text-justify text-base sm:text-[12px] sm:leading-5 lg:text-base leading-8 font-normal text-slate-800">
               Yuvraj Malik is presently the Director, National Book Trust, India
@@ -59,7 +59,7 @@ function Author() {
             /> */}
             <CldImage
               src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734585149/NBT-Chandrayaan3/assets/author/nx1z2v99wxw3egsvgpja.jpg"
-              className="sm:w-[300px] sm:h-[400px] lg:w-[493px] lg:h-[506px] md:h-[55vh]  xl:h-[70vh] shadow-lg"
+              className="sm:w-[300px] sm:h-[300px] lg:w-[493px] lg:h-[506px] md:h-[55vh]  xl:h-[70vh] shadow-lg"
               width={493}
               height={506}
               crop={{ type: "auto", source: true }}
