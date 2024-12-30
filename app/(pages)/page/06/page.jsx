@@ -3,7 +3,7 @@ import FooterStory from "@/app/_Components/FooterStory";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-function Page6() {
+export default function Page6() {
   const router = useRouter();
 
   const prevPageHandler = () => {
@@ -52,5 +52,3 @@ function Page6() {
     </>
   );
 }
-
-export default Page6;

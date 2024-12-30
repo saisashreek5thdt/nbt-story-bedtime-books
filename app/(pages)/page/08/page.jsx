@@ -34,8 +34,8 @@ export default function Page8() {
             objectFit="cover"
           />
           <div className="text-black text-justify text-2xl font-medium pr-10 py-20 flex flex-row-reverse sm:text-sm  sm:py-10 lg:text-xl lg:pr-12 lg:py-12">
-            <div className="flex pr-8 flex-col gap-4 sm:pr-4 sm:gap-2" >
-              <p >
+            <div className="flex pr-8 flex-col gap-4 sm:pr-4 sm:gap-2">
+              <p>
                 Dadaji - Thousands of years before people could not even dream
                 of space and aircrafts, ancient Indian wise men had compiled the
                 Vimaanshastra, or the science of flying. Gods and kings often

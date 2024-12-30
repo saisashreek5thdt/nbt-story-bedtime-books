@@ -34,9 +34,10 @@ export default function Page9() {
           <div className="pl-32">
             <p>
               Just imagine! Veer, the great mathematician Aryabhatt who
-              discovered &apos;Zero&apos; was an esteemed teacher at Nalanda University.
-              The Chinese scholar Hiuen Tsang studied at Nalanda University and
-              even because a teacher there, so great was its name and fame.
+              discovered &apos;Zero&apos; was an esteemed teacher at Nalanda
+              University. The Chinese scholar Hiuen Tsang studied at Nalanda
+              University and even because a teacher there, so great was its name
+              and fame.
             </p>
           </div>
         </div>

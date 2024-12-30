@@ -3,7 +3,7 @@ import FooterStory from "@/app/_Components/FooterStory";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-function Page7() {
+export default function Page7() {
   const router = useRouter();
 
   const prevPageHandler = () => {
@@ -27,9 +27,9 @@ function Page7() {
             world?
           </p>
           <p>
-            Veer&apos;s eyes widened. He had not known this about his country. He
-            became even more alert and intrested in what Dadaji was saying. Ths
-            clever grandpa knew that Veer was keen to learn of the glory of
+            Veer&apos;s eyes widened. He had not known this about his country.
+            He became even more alert and intrested in what Dadaji was saying.
+            Ths clever grandpa knew that Veer was keen to learn of the glory of
             India&apos;s past. He continued on the same lines.
           </p>
         </div>
@@ -43,5 +43,3 @@ function Page7() {
     </>
   );
 }
-
-export default Page7;

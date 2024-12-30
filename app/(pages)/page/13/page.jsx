@@ -30,9 +30,9 @@ export default function Page13() {
             <p>Veer - VIKAS!!!</p>
             <p>
               Dadaji - Shabash! It is a short form of Vikram Sarabhai, who
-              played an important role in shaping India&apos;s space research and
-              exploration endeavours. His significant contributions have left a
-              profound mark on India&apos;s scientific programmes.
+              played an important role in shaping India&apos;s space research
+              and exploration endeavours. His significant contributions have
+              left a profound mark on India&apos;s scientific programmes.
             </p>
             <p>
               Veer - I am so proud of our scientists. What a great achievement!
