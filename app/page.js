@@ -27,7 +27,7 @@ export default function Home() {
             onClick={openModal}
           />
         </div>
-        <div className="xl:w-[30rem] xl:max-h-80 mx-auto top-12 flex items-center justify-center">
+        <div className="xl:w-[30rem] xl:max-h-80  mx-auto top-12 flex items-center justify-center">
           {/* <Image
             src="/images/home/homePageBG1.png"
             alt="Chandrayaan 3"
@@ -40,12 +40,11 @@ export default function Home() {
           /> */}
           <CldImage
             src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734583824/NBT-Chandrayaan3/assets/coverImages/home/znrri581t1m0yfeg2emd.png"
+            className=" sm:w-[320px] sm:h-[300px] -mt-28 2xl:w-[38rem] 2xl:bottom-48"
             width={2362}
             height={2834}
             crop={{ type: "auto", source: true }}
-            alt="Chandrayaan3 Cover Page"
-            className="mt-5 2xl:w-[38rem] 2xl:bottom-48"
-            style={{ height: "auto", width: "auto" }}
+            alt="Chandrayaan3 Cover Page"            
           />
         </div>
       </section>

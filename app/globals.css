@@ -17,7 +17,7 @@
   }
 
   .page1 {
-    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734586182/NBT-Chandrayaan3/assets/bgImages/page1/ku77xzmjqiuaysavtr0w.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734586182/NBT-Chandrayaan3/assets/bgImages/page17/rqeywxejhwihfuwdhf0k.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -126,6 +126,14 @@
 
   .quizBG {
     background-image: url("/images/home/bg-home-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .page1{
+    height: 420px;
     background-repeat: no-repeat;
     background-size: cover;
   }

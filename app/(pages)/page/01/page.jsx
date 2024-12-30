@@ -28,8 +28,6 @@ export default function Page1() {
 
   let imgURL1 = getCldImageUrl({
     src: "NBT-Chandrayaan3/assets/fgImages/page1/sn5v7djagnh4wqetd8nf",
-    width: 139,
-    height: 92,
     fillBackground: true,
     crop: "auto",
   });
@@ -49,13 +47,13 @@ export default function Page1() {
       <section className="w-[100vw] h-[100vh] page1 bg-cover select-none">
         <div className="container mx-auto px-4 py-8">
           <TwoColumnLayout1
-            imageSrc={imgURL1}
-            altText="Grand Father Grand Son Table"
-            width="139"
-            height="92"
-            className="bg-cover block ml-[30rem]"
+            // imageSrc={imgURL1}
+            // altText="Grand Father Grand Son Table"
+            // width="139"
+            // height="92"
+            // className="bg-cover block ml-[30rem]"
           >
-            <p className="text-justify text-3xl font-medium select-none">
+            <p className="text-justify text-3xl sm:text-lg md:text-xl lg:text-2xl sm:-ml-5 sm:-mt-8 sm:w-4/5 font-medium select-none">
               {para1}
             </p>
           </TwoColumnLayout1>

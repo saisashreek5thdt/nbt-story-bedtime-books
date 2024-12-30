@@ -19,8 +19,8 @@ function Author() {
       <section className="w-[100vw] h-[100vh] bg-cover select-none">
         <div className="mx-auto md:p-3 lg:p-1 xl:p-16 grid grid-cols-2 gap-4">
           <div className="md:py-2 lg:py-1 xl:py-0 flex flex-col md:gap-2 lg:gap-2">
-            <h2 className="text-start text-2xl font-medium">About Author</h2>
-            <p className="text-justify text-base leading-8 font-normal text-slate-800">
+            <h2 className="text-start text-2xl font-medium sm:text-base lg:text-lg">About Author</h2>
+            <p className="text-justify text-base sm:text-[12px] sm:leading-5 lg:text-base leading-8 font-normal text-slate-800">
               Yuvraj Malik is presently the Director, National Book Trust, India
               (under the Ministry of Education, Government of India) since 2020.
               Before joining National Book Trust, India, he has served with
@@ -28,13 +28,13 @@ function Author() {
               Kashmir, United Nations Missions in Africa and several operational
               areas in administrative and operational assignments.
             </p>
-            <p className="text-justify text-base leading-8 font-normal text-slate-800">
+            <p className="text-justify text-base sm:text-[12px] sm:leading-5 lg:text-base leading-8 font-normal text-slate-800">
               He is also the Fair Director / CEO of New Delhi World Book Fair
               which is the biggest B2C Book Fair in the world. He has also been
               the Chairman of Commission for Scientific & Technical Terminology
               (CSTT), Ministry of Education, Government of India.
             </p>
-            <p className="text-justify text-base leading-8 font-normal text-slate-800">
+            <p className="text-justify text-base sm:text-[12px] sm:leading-5 lg:text-base leading-8 font-normal text-slate-800">
               Under his leadership, National Book Trust, India is implementing
               the prestigious PM-YUVA Mentorship Scheme for Young Authors in 22
               official languages of India and English launched by Ministry of
@@ -42,7 +42,7 @@ function Author() {
               events.
             </p>
             <Link href="mailto:yuvrajmalik117@gmail.com">
-              <p className="text-justify text-lg leading-8 font-bold text-slate-800">
+              <p className="text-justify text-lg sm:text-base lg:text-lg leading-8 font-bold text-slate-800">
                 Send Me an Email
               </p>
             </Link>
@@ -59,11 +59,11 @@ function Author() {
             /> */}
             <CldImage
               src="https://res.cloudinary.com/dydh2rfnk/image/upload/v1734585149/NBT-Chandrayaan3/assets/author/nx1z2v99wxw3egsvgpja.jpg"
+              className="sm:w-[300px] sm:h-[400px] lg:w-[493px] lg:h-[506px] md:h-[55vh]  xl:h-[70vh] shadow-lg"
               width={493}
               height={506}
               crop={{ type: "auto", source: true }}
               alt="Yuvraj Malik Image"
-              className="md:h-[55vh] lg:h-[60vh] xl:h-[70vh] shadow-lg"
             />
           </div>
         </div>
