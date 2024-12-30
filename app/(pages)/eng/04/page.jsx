@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { getCldImageUrl } from "next-cloudinary";
 import { CldImage } from "next-cloudinary";
+
 function Page4() {
   const router = useRouter();
 
@@ -21,42 +22,47 @@ function Page4() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page4 bg-cover select-none">
-        <div className="flex flex-row-reverse">
+      <section className="w-full h-screen bg-cover page4 select-none relative">
+        {/* Image container, positioned top-right */}
+        <div className="absolute top-4 right-4 flex justify-end">
           <CldImage
             src={imgURL1}
             alt="moon"
             className="bg-cover"
-            width={300}
-            height={300}
+            width={100}
+            height={100}
           />
         </div>
-        <div className="w-1/2 -mt-14 ml-[650px] flex flex-col gap-4 text-justify text-white text-lg font-medium">
-          <p>
+
+        {/* Text container moved to the right side */}
+        <div className="absolute top-[14%] right-[2%] sm:right-[2%] md:right-[2%] lg:right-[2%]  w-[90%] sm:w-[56%] md:w-[58%] lg:w-[50%] xl:w-[50%] text-justify text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-normal sm:leading-relaxed ">
+          <p className="mb-0">
             Dadaji - Veer, it was a very great day in the history of Space
             research, as well as for India. Modiji has rightly named 23 August as
             National Space Day. But first let me tell you a small story about
             the moon which I heard from my grandmother when I was young.
           </p>
-          <p>
+          <p className="mb-0">
             Veer - Wow! Tell me quickly, Dadaji.
           </p>
-          <p>
+          <p className="mb-0">
             Dadaji - Once upon a time, a young princess wanted to go to the moon.
-            The king  didn&apos;t know how to fulfil his daughter&apos;s foolish
+            The king didn&apos;t know how to fulfil his daughter&apos;s foolish
             wish. He promised a huge reward for anyone who would please his daughter.
             Many courtiers came forward with various ideas but none could please the
             princess.
           </p>
-          <p>
-            One day, a saint came and took the challange.
+          <p className="mb-0">
+            One day, a saint came and took the challenge.
             He asked the king to bring his daughter before him.
           </p>
-          <p>
+          <p className="mb-0">
             Saint - Tell me, little one, how big is the moon?
           </p>
         </div>
       </section>
+
+      {/* Footer navigation */}
       <FooterStory
         pageNum1={"06"}
         pageNum2={"07"}

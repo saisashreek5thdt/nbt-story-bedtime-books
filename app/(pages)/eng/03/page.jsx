@@ -16,25 +16,40 @@ function Page3() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page3 bg-cover select-none">
-        <div className="ml-[45rem] py-[4rem] flex flex-col justify-center gap-3 text-slate-800 text-2xl text-justify font-medium">
-          <p className="px-24">
-            Dadaji&apos;s eyes twinkle. He had been expecting this question from
-            Veer for quite sometime now. He knew about the forthcoming workshop
-            in the boy&apos;s school, and had seen his excited preparations.
-          </p>
-          <p className="px-24">
-            Dadaji - What is so special about the moon today?
-          </p>
-          <p className="px-24">
-            Veer - Dadaji, this morning while cleaning my room,
-            I saw the picture of a spacecraft on the moon on the
-            front page of a newspaper. There were also pictures
-            of people celebrating. I want to know why this news
-            was so important that day.
-          </p>
+      <section className="w-full h-screen bg-cover select-none page3 flex">
+        {/* Left section for image or illustration */}
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="relative">
+            {/* Placeholder for image */}
+            {/* <img
+              src="/path-to-your-image.jpg"
+              alt="Illustration"
+              className="w-full h-auto"
+            /> */}
+          </div>
+        </div>
+
+        {/* Right section for text */}
+        <div className="w-1/2 h-full flex items-start justify-start">
+          <div className="p-7 text-justify text-black text-sm font-medium sm:text-sm -md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+            <p className="mb-4">
+              Dadaji&apos;s eyes twinkle. He had been expecting this question from
+              Veer for quite some time now. He knew about the forthcoming workshop
+              in the boy&apos;s school, and had seen his excited preparations.
+            </p>
+            <p className="mb-4">
+              Dadaji - What is so special about the moon today?
+            </p>
+            <p>
+              Veer - Dadaji, this morning while cleaning my room, I saw the picture
+              of a spacecraft on the moon on the front page of a newspaper. There
+              were also pictures of people celebrating. I want to know why this news
+              was so important that day.
+            </p>
+          </div>
         </div>
       </section>
+
       <FooterStory
         pageNum1={"04"}
         pageNum2={"05"}
