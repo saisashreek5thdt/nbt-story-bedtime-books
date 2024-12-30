@@ -17,7 +17,7 @@ function Page7() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] page7 bg-cover select-none">
-        <div className="flex text-black text-xl font-medium px-16 pt-20 gap-12">
+        <div className="flex text-black text-xl font-medium px-16 pt-20 gap-12 sm:text-sm sm:px-8 sm:pt-7 lg:text-2xl lg:px-12 lg:pt-10">
           <p>
             Dadaji - Veer, this is what everyone has been made to believe. The
             fact is, that other nations have explored space just a few decades
