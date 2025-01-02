@@ -4,6 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { getCldImageUrl } from "next-cloudinary";
 import Image from "next/image";
+import MovingSubtitle from "@/app/_Components/MovingSubtitle";
 function Page5() {
   const router = useRouter();
 
@@ -85,11 +86,15 @@ function Page5() {
           </div>
         </div>
       </section>
-      <FooterStory
+      {/* <FooterStory
         pageNum1={"08"}
         pageNum2={"09"}
         onPrev={prevPageHandler}
         onNext={nextPageHandler}
+      /> */}
+      <MovingSubtitle
+        text={"Dadaji - Veer, it was a very great day in the history of Space"}
+        speed={1000}
       />
     </>
   );

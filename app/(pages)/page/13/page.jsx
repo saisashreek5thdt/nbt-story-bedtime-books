@@ -17,7 +17,7 @@ export default function Page13() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page13 select-none">
-        <div className="text-black text-justify text-lg font-medium pl-28 pt-14 flex flex-row-reverse sm:text-sm sm:pl-10 sm:pt-2 lg:text-xl lg:pl-28 lg:pt-10">
+        <div className="text-black text-justify text-lg font-medium pl-28 pt-14 flex flex-row-reverse sm:text-[12px] sm:leading-4  sm:pl-10 sm:pt-2 lg:text-xl lg:ml-4 lg:pt-10">
           <div className="w-1/2 flex flex-col pr-10 gap-4 sm:gap-1 sm:pr-2 sm:w-1/2 lg:gap-4 lg:pr-10 lg:w-1/2">
             <p>
               Dadaji - Ok, tell me the name of the engine of the launch vehicle

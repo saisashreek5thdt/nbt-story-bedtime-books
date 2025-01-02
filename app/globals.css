@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+}
+
+
+
+
 @layer base {
   body {
     font-family: "Jost";
@@ -17,7 +35,7 @@
   }
 
   .page1 {
-    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1734586182/NBT-Chandrayaan3/assets/bgImages/page17/rqeywxejhwihfuwdhf0k.png");
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1735644748/NBT-Chandrayaan3/assets/bgImages/page1/pkftpgetorjyryeasvxu.png");
     background-repeat: no-repeat;
     background-size: cover;
   }

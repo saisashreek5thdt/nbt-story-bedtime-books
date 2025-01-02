@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
 import { lang } from "../../../utils/lang.json";
+import MovingSubtitle from "@/app/_Components/MovingSubtitle";
 
 export default function Page3() {
   const router = useRouter();
@@ -54,11 +55,15 @@ export default function Page3() {
           )}
         </div>
       </section>
-      <FooterStory
+      {/* <FooterStory
         pageNum1={"04"}
         pageNum2={"05"}
         onPrev={prevPageHandler}
         onNext={nextPageHandler}
+      /> */}
+      <MovingSubtitle
+        text={para1}
+        speed={1000}
       />
     </>
   );

@@ -17,8 +17,8 @@ export default function Page14() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page14 select-none">
-        <div className="text-white text-justify text-2xl font-medium pl-28 pt-80 flex flex-row-reverse">
-          <div className="w-1/2 flex flex-col pr-10 gap-4">
+        <div className="text-white text-justify text-2xl font-medium pl-28 pt-80 sm:pt-20 sm:text-sm sm:pl-12 lg:pt-80  lg:text-2xl lg:pl-20 flex flex-row-reverse">
+          <div className="w-1/2 flex flex-col pr-10 gap-4 ">
             <p>
               Dadaji - Veer, first of all you should know that Chandrayaan is
               the name of the Indian Lunar Exploration Program.

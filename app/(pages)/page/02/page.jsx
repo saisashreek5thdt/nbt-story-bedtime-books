@@ -7,6 +7,7 @@ import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
 import { getCldImageUrl } from "next-cloudinary";
 import { lang } from "../../../utils/lang.json";
 import { useGlobalState } from "@/app/context/GlobalStateContext";
+import MovingSubtitle from "@/app/_Components/MovingSubtitle";
 
 export default function Page2() {
   const router = useRouter();
@@ -52,7 +53,7 @@ export default function Page2() {
         <TwoColumnLayout4
           textContent1={
             <>
-              {Array.isArray(para1) && para1.length > 0 ? (
+              {/* {Array.isArray(para1) && para1.length > 0 ? (
                 para1.map((text, index) => (
                   <p
                     key={index}
@@ -65,12 +66,12 @@ export default function Page2() {
                 <p className="text-justify text-2xl sm:text-sm font-medium select-none lg:text-lg">
                   No content available.
                 </p>
-              )}
+              )} */}
             </>
           }
           textContent2={
             <>
-              {Array.isArray(para2) && para2.length > 0 ? (
+              {/* {Array.isArray(para2) && para2.length > 0 ? (
                 para2.map((text, index) => (
                   <p
                     key={index}
@@ -83,7 +84,7 @@ export default function Page2() {
                 <p className="text-justify text-2xl lg:text-lg sm:text-sm font-medium select-none">
                   No content available.
                 </p>
-              )}
+              )} */}
             </>
           }
           imageSrc1={imgURL1}
@@ -97,9 +98,15 @@ export default function Page2() {
           className="mt-8"
         ></TwoColumnLayout4>
       </section>
+      <MovingSubtitle
+        text={para1 +" "+ para2}
+        audioSRC={`/audio/EnglishAudioPage01.mp3`}
+        speed={50}
+      />
       <FooterStory
         pageNum1={"03"}
         pageNum2={"04"}
+        audioSRC={`/audio/EnglishAudioPage01.mp3`}
         onPrev={prevPageHandler}
         onNext={nextPageHandler}
       />
