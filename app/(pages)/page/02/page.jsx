@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import FooterStory from "@/app/_Components/FooterStory";
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import TwoColumnLayout4 from "@/app/_Layouts/TwoColumnLayout4";
 import { getCldImageUrl } from "next-cloudinary";
@@ -41,10 +41,12 @@ export default function Page2() {
   );
 
   // Extract para1 and para2 dynamically from pageData
-  const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]
-    ?.para1 || ["Default content for para1"];
-  const para2 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]
-    ?.para2 || ["Default content for para2"];
+  const para1 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para1 || [
+    "Default content for para1",
+  ];
+  const para2 = pageData?.[state.lang.toLowerCase()]?.[0]?.page2?.[0]?.para2 || [
+    "Default content for para2",
+  ];
 
   return (
     <>
@@ -56,13 +58,13 @@ export default function Page2() {
                 para1.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify font-medium select-none text-{5px} sm:text-base md:text-lg lg:text-base"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify font-medium select-none text-{5px} sm:text-base md:text-lg lg:text-base">
                   No content available.
                 </p>
               )}
@@ -74,13 +76,13 @@ export default function Page2() {
                 para2.map((text, index) => (
                   <p
                     key={index}
-                    className="text-justify text-lg font-medium select-none"
+                    className="text-justify font-medium select-none text-xs sm:text-base md:text-lg lg:text-base"
                   >
                     {text}
                   </p>
                 ))
               ) : (
-                <p className="text-justify text-lg font-medium select-none">
+                <p className="text-justify font-medium select-none text-xs sm:text-base md:text-lg lg:text-base">
                   No content available.
                 </p>
               )}

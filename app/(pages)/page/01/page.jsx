@@ -55,7 +55,8 @@ export default function Page1() {
             height="92"
             className="bg-cover block ml-[30rem]"
           >
-            <p className="text-justify text-3xl font-medium select-none">
+            <p className="text-justify font-medium select-none text-base sm:text-m md:text-xl lg:text-xl xl:text-2xl 
+              absolute top-4 left-4 sm:static">
               {para1}
             </p>
           </TwoColumnLayout1>

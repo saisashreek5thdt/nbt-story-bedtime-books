@@ -1,59 +1,44 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-
 "use client";
 import FooterStory from "@/app/_Components/FooterStory";
-import React, { useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
-import { useGlobalState } from "@/app/context/GlobalStateContext";
-import { lang } from "../../../utils/lang.json";
 
-export default function Page3() {
+function Page3() {
   const router = useRouter();
-  const { state, setCurrentPath } = useGlobalState();
 
   const prevPageHandler = () => {
-    router.push("/page/02");
+    router.push("/eng/02");
   };
 
   const nextPageHandler = () => {
-    router.push("/page/04");
+    router.push("/eng/04");
   };
 
-  useEffect(() => {
-    if (state.currentPath) {
-      setCurrentPath(router.push("/page/03")); // Update the current path when the component mounts
-    }
-  }, []);
-
-  const pageData = lang?.find(
-    (language) =>
-      language[state.lang.toLowerCase()] &&
-      language[state.lang.toLowerCase()][0]?.page3?.[0]
-  );
-
-  const para1 =
-    pageData?.[state.lang.toLowerCase()]?.[0]?.page3?.[0]?.para1 ||
-    "Default content.";
   return (
     <>
-      <section className="w-[100vw] h-[100vh] page3 bg-cover select-none">
-        <div className="w-1/2 ml-[45rem] pl-10 pt-20 flex flex-col justify-center gap-3 text-slate-800 text-xl text-justify font-medium">
-          {Array.isArray(para1) && para1.length > 0 ? (
-            para1.map((text, index) => (
-              <p
-                key={index}
-                className="text-justify text-lg font-medium select-none"
-              >
-                {text}
-              </p>
-            ))
-          ) : (
-            <p className="text-justify text-lg font-medium select-none">
-              No content available.
+      <section className="w-full h-screen bg-cover select-none page3">
+        <div className="flex justify-end h-full">
+          {/* Text container with limited width and adjusted height */}
+          <div className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 py-4 flex flex-col justify-start gap-3 text-slate-800 font-medium text-justify">
+            <p className="mb-3 text-base sm:text-lg md:text-lg lg:text-xl">
+              Dadaji&apos;s eyes twinkle. He had been expecting this question from
+              Veer for quite some time now. He knew about the forthcoming workshop
+              in the boy&apos;s school, and had seen his excited preparations.
             </p>
-          )}
+            <p className="mb-3 text-base sm:text-lg md:text-lg lg:text-xl">
+              Dadaji - What is so special about the moon today?
+            </p>
+            <p className="text-base sm:text-lg md:text-lg lg:text-xl">
+              Veer - Dadaji, this morning while cleaning my room,
+              I saw the picture of a spacecraft on the moon on the
+              front page of a newspaper. There were also pictures
+              of people celebrating. I want to know why this news
+              was so important that day.
+            </p>
+          </div>
         </div>
       </section>
+
       <FooterStory
         pageNum1={"04"}
         pageNum2={"05"}
@@ -63,3 +48,5 @@ export default function Page3() {
     </>
   );
 }
+
+export default Page3;
