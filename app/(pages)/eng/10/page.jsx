@@ -17,8 +17,8 @@ export default function Page10() {
   return (
     <>
       <section className="w-[100vw] h-[100vh] bg-cover page10 select-none">
-  <div className="absolute top-[5%] p-7 text-justify text-black text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-end">
-    <div className="w-[40%] xs:w-35% sm:w-[40%] md:w-[43%] lg:w-[40%] xl:w-[42%] flex flex-col gap-2">
+  <div className="absolute top-[2%] p-7 text-justify text-black text-xm sm:text-sm md:text-base lg:text-lg xl:text-2xl 2xl:text-xl  xl:pt-20  font-medium flex justify-end">
+    <div className="w-[40%] xs:w-35% sm:w-[40%] md:w-[43%] lg:w-[35%]   lg:pl-28 xl:w-[42%] 2xl:w-[49%] flex flex-col gap-4">
       <p>
         Veer was amazed. But he felt that Dadaji had started talking about
         something else now. Getting impatient, he gently returned to the

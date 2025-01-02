@@ -24,18 +24,18 @@ function Page4() {
     <>
       <section className="w-full h-screen bg-cover page4 select-none relative">
         {/* Image container, positioned top-right */}
-        <div className="absolute top-4 right-4 flex justify-end">
+        <div className="absolute top-3 w-[100%] right-4 flex justify-end">
           <CldImage
             src={imgURL1}
             alt="moon"
             className="bg-cover"
-            width={100}
+            width={200}
             height={100}
           />
         </div>
 
         {/* Text container moved to the right side */}
-        <div className="absolute top-[14%] right-[2%] sm:right-[2%] md:right-[2%] lg:right-[2%]  w-[90%] sm:w-[56%] md:w-[58%] lg:w-[50%] xl:w-[50%] text-justify text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium leading-normal sm:leading-relaxed ">
+        <div className="absolute top-[14%]  font-small right-[2%] sm:right-[2%] md:right-[2%] lg:right-[2%]  w-[90%] sm:w-[56%] md:w-[58%] lg:w-[50%] xl:w-[50%] text-justify   text-white text-xs sm:text-xs md:text-base md:pt-5 sm:pt-2 lg:text-xl lg:pt-10 font-medium leading-normal sm:leading-relaxed ">
           <p className="mb-0">
             Dadaji - Veer, it was a very great day in the history of Space
             research, as well as for India. Modiji has rightly named 23 August as

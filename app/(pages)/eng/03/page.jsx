@@ -30,8 +30,8 @@ function Page3() {
         </div>
 
         {/* Right section for text */}
-        <div className="w-1/2 h-full flex items-start justify-start">
-          <div className="p-7 text-justify text-black text-sm font-medium sm:text-sm -md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+        <div className="w-[80%] h-full flex items-start justify-start">
+          <div className="p-7 text-justify text-black text-sm font-small   xs:text-xs sm:text-sm md:text-base lg:text-lg    xs:pl-60 sm:pl-40   md:pl-60md:w-[100%] md:pl-40 lg:w-3/2 lg:ml-40  xl:text-xl 2xl:text-2xl xl:w-[100%] xl:pl-20  xl:pt-20">
             <p className="mb-4">
               Dadaji&apos;s eyes twinkle. He had been expecting this question from
               Veer for quite some time now. He knew about the forthcoming workshop
