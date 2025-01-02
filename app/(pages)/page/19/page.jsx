@@ -15,7 +15,7 @@ export default function Page19() {
 
   return (
     <>
-      <section className="w-[100vw] h-[100vh] bg-cover select-none"></section>
+      <section className="w-[100vw] h-[100vh] bg-cover page19 select-none"></section>
       <FooterStory
         pageNum1={"36"}
         pageNum2={"37"}

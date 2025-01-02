@@ -59,12 +59,18 @@ export default function Page1() {
           </TwoColumnLayout1>
         </div>
       </section>
-      <FooterStory
+      {/* <FooterStory
         pageNum1={"01"}
         pageNum2={"02"}
         onPrev={prevPageHandler}
         onNext={nextPageHandler}
-      />
+      /> */}
+      <div className="flex items-center justify-center gap-4 fixed bottom-0 mb-4 w-56 h-10 rounded-2xl mx-0 bg-[#c4122f] text-white">
+        <h1>M</h1>
+        <h1>M</h1>
+        <h1>M</h1>
+        <h1>M</h1>
+      </div>
     </>
   );
 }

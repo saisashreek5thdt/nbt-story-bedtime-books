@@ -124,6 +124,12 @@
     background-size: cover;
   }
 
+  .page19 {
+    background-image: url("https://res.cloudinary.com/dydh2rfnk/image/upload/v1735041653/NBT-Chandrayaan3/assets/bgImages/page19/ffswg2yju2siqoyocrg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .quizBG {
     background-image: url("/images/home/bg-home-2.png");
     background-repeat: no-repeat;
