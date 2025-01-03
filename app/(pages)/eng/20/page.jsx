@@ -25,8 +25,8 @@ export default function Page20() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="text-black flex pl-16 pt-10 md:pt-15 xd:pt-2 sm:pr-2 sm:pl-2 md:pr-5 md:pl-5 lg:pr-10 gap-20 text-xl sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl pr-30 text-justify">
-          <div className="w-[580px] flex flex-col gap-4 ml-auto">
+        <div className="text-black flex pl-16 pt-10 md:pt-15  sm:pr-2 sm:pl-2 md:pr-5 md:pl-5 lg:pr-10 gap-20 text-xl sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-xl pr-10 text-justify">
+          <div className="w-[580px] sm:w-[450px] lg:w-[500px]  xl:w-[610px] flex flex-col gap-4 ml-auto">
             <p>
               Dadaji - Yes, at that time Modi ji was in South Africa to attend
               the 15th BRICS summit but was keeping a close watch on the
@@ -34,7 +34,7 @@ export default function Page20() {
               space team. Veer listened in wonder as Dadaji continued.
             </p>
           </div>
-          <div className="flex flex-col w-[600px] sm:gap-0 gap-2 ml-auto ">
+          <div className="flex flex-col w-[500px]  sm:w-[450px] lg:w-[500px] xl:w-[610px] sm:gap-0 gap-2 ml-auto ">
             <p>
               Dadaji - After his return, he himself went to the space centre in
               Bangalore and congratulated all the scientists personally. This
