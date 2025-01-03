@@ -50,7 +50,7 @@ export default function Page28() {
               we all refer to the Earth as 'Mother' and the Moon as 'Uncle'. It
               was once said that Uncle Moon is very door (far away). Now, there
               will come a day when children will say, 'Uncle Moon' is
-              just a 'tour' away  new .
+              just a 'tour' away   .
             </p>
           </div>
         </div>
